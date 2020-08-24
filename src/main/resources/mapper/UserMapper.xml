@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gtp.myhistory.mapper.UserMapper2">
+    <!--1、使用  resultType ：   主要针对于从数据库中提取相应的数据出来-->
+    <!--2、使用parameterType ：   主要针对于   将信息存入到数据库中  如：insert 增加数据到数据库中 Update等
+    resultType是sql语句查询结果集的封装类型，也就是说把sql查询的结果封装在bean里返回回去，是存数据用的。
+    paramType是从传过来的Bean中取数据放进例如insert语句的values中当实参用，是取数据用的。-->
+    <select id="selectAll2" resultType="com.gtp.myhistory.been.User">
+        select * from user
+    </select>
+    <select id="findUserById" resultType="com.gtp.myhistory.been.User">
+        select * from user where id = #{id}
+    </select>
+    <select id="selectUsers" resultType="com.gtp.myhistory.been.User">
+		select * from user ${ew.customSqlSegment}
+	</select>
+
+    <insert id="insertUser"  parameterType="com.gtp.myhistory.been.User">
+		insert into user values(null,#{name},#{password})
+	</insert>
+
+    <delete id="delectUserById" parameterType="com.gtp.myhistory.been.User">
+		delete from user where id=#{id}
+	</delete>
+</mapper>

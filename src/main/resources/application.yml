@@ -1,0 +1,19 @@
+#server:
+#  port: 8005  # 服务端口号
+#spring:
+#  thymeleaf:
+#    cache: false
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    encoding: UTF-8
+#    mode: HTML5
+##  application:
+##    name: mybatis-service  # 服务名称
+#jdbc:  # 数据源链接信息
+#  driverClassName: com.mysql.cj.jdbc.Driver
+#  url: jdbc:mysql://localhost:3306/myhistory?serverTimezone=UTC&characterEncoding=utf-8
+#  username: root
+#  password: 123456
+#mybatis:
+#  type-aliases-package: com.gtp.myhistory.been # 别名扫描宝
+#  mapper-locations: classpath:mappers/*.xml # 映射文件的路径扫描
