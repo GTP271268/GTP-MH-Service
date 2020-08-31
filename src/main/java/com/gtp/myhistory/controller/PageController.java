@@ -1,7 +1,7 @@
 package com.gtp.myhistory.controller;
 
 
-import com.gtp.myhistory.been.User;
+import com.gtp.myhistory.been.UserTest;
 import com.gtp.myhistory.mapper.UserMapper;
 import com.gtp.myhistory.service.DemoService;
 import io.swagger.annotations.ApiOperation;
@@ -42,7 +42,7 @@ public class PageController {
 	@RequestMapping("/getuser")
 	@ResponseBody
 	public Object test2(Model model) {
-		List<User> list=userMapper.getUser();
+		List<UserTest> list=userMapper.getUser();
 		return list;
 	}
 

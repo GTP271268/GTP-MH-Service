@@ -1,7 +1,7 @@
 package com.gtp.myhistory.controller;
 
 
-import com.gtp.myhistory.been.User;
+import com.gtp.myhistory.been.UserTest;
 import com.gtp.myhistory.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

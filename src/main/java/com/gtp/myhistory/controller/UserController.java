@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.gtp.myhistory.been.JsonDate;
 import com.gtp.myhistory.been.ResponseJson;
 import com.gtp.myhistory.been.Role;
-import com.gtp.myhistory.been.User;
+import com.gtp.myhistory.been.UserTest;
 import com.gtp.myhistory.mapper.UserMapper;
 import com.gtp.myhistory.mapper.UserMapper2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,12 +40,12 @@ public class UserController {
 //		int a=userMapper2.upateUser(new UpdateWrapper<User>().set("name", "C").eq("id", 1));
 //		List<User> u2=userMapper2.selectAll2();
 //		User u3 =userMapper2.findUserById(1);
-		List<User> list = userMapper2.selectUsers(new QueryWrapper<User>().eq("name", "C"));
+		List<UserTest> list = userMapper2.selectUsers(new QueryWrapper<UserTest>().eq("name", "C"));
 		return list;
 	}
 
 	@PostMapping("/test2")
-	public User test2(@RequestBody @Valid User user) {
+	public UserTest test2(@RequestBody @Valid UserTest user) {
 //		{"id": 1, "name": "gtp", "password": "123456" }
       String s=user.toString();
 

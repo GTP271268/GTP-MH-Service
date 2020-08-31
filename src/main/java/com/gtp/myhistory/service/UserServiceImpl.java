@@ -1,6 +1,6 @@
 package com.gtp.myhistory.service;
 
-import com.gtp.myhistory.been.User;
+import com.gtp.myhistory.been.UserTest;
 import com.gtp.myhistory.dao.DemoDao;
 import com.gtp.myhistory.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ public class UserServiceImpl implements UserService {
     UserMapper userMapper;
 
     @Override
-    public List<User> test() {
+    public List<UserTest> test() {
 
         //return demoDao.test();
         return null;

@@ -1,6 +1,6 @@
 package com.gtp.myhistory.been;
 
-public class User {
+public class UserTest {
     private int id;
     private String name;
     private String password;
@@ -31,7 +31,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserTest{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +

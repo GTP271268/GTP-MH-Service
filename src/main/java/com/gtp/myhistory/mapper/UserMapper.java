@@ -1,6 +1,7 @@
 package com.gtp.myhistory.mapper;
 
-import com.gtp.myhistory.been.User;
+import com.gtp.myhistory.been.UserTest;
+import com.gtp.myhistory.been.UserTest;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -13,7 +14,7 @@ import java.util.List;
 @Repository
 public interface UserMapper {
     @Select("select * from user")
-    List<User> getUser();
+    List<UserTest> getUser();
 
     @Insert("insert into user values(null,#{name},#{password})")
     void insertUser(@Param("name") String name,@Param("password") String password);

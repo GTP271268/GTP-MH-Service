@@ -1,6 +1,6 @@
 package com.gtp.myhistory.service;
 
-import com.gtp.myhistory.been.User;
+import com.gtp.myhistory.been.UserTest;
 import com.gtp.myhistory.dao.DemoDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ public class DemoServiceImpl implements DemoService {
     DemoDao demoDao;
 
     @Override
-    public List<User> test() {
+    public List<UserTest> test() {
 
         return demoDao.test();
 

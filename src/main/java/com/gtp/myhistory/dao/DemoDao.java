@@ -1,6 +1,6 @@
 package com.gtp.myhistory.dao;
 
-import com.gtp.myhistory.been.User;
+import com.gtp.myhistory.been.UserTest;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +11,5 @@ import java.util.List;
 public interface DemoDao {
 
     //List<User> test(@Param("id") int id);
-    List<User> test();
+    List<UserTest> test();
 }
